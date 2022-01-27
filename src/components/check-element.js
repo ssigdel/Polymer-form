@@ -17,7 +17,7 @@ class CheckElement extends LitElement{
                 display: flex;
                 flex-direction: column;
                 border: 2px solid #999;
-                border-radius: 20px;
+                border-radius: 10px;
                 height: 100px;
                 overflow-y: scroll;
             }
@@ -46,7 +46,7 @@ class CheckElement extends LitElement{
         return html `
             <h5>Binding Group</h5>
             <div class="check-items">
-            ${this.listItems.map((item) => html `<div class="check-item"><paper-checkbox>${item}</paper-checkbox></div>`)}
+            ${this.listItems.map((item) => html `<div class="check-item"><paper-checkbox noink>${item}</paper-checkbox></div>`)}
             </div>
         `
     }

@@ -9,7 +9,7 @@ class IconElement extends LitElement{
 
     render(){
         return html `
-            <paper-icon-button icon="cross"></paper-icon-button>
+            <paper-icon-button src="images/cross-icon.png"></paper-icon-button>
         `
     }
 }

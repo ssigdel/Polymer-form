@@ -17,16 +17,15 @@ class MainElement extends LitElement{
             align-items: center;
         }
         .container{
-            margin: 20px;
+            margin: 25px;
         }
         .input-container{
             display: flex;
         }
         .header{
             display: flex;
+            justify-content: space-between;
         }
-        
-        
         `
     }
 
@@ -38,7 +37,6 @@ class MainElement extends LitElement{
         return html `
         <paper-card>
         <div class="container">
-          
             <div class="header">
                 <h3>Create Binding Group</h3>
                 <icon-element></icon-element>
