@@ -9,7 +9,7 @@ class ButtonElement extends LitElement{
 
     render(){
         return html `
-            <paper-button raised class="indigo">Create</paper-button>
+            <paper-button raised>Create</paper-button>
             <paper-button>CANCEL</paper-button>
         `
     }

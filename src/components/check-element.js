@@ -1,12 +1,6 @@
 import '@polymer/paper-checkbox/paper-checkbox';
 import { css, html, LitElement } from 'lit';
 
-const items = [
-    'BRD2 Affinity_High_Affinity',
-    'BRD2 AMP_PNP_competitive',
-    'BRD2 NRX-0459676_non-competitive'
-]
-
 class CheckElement extends LitElement{
     static get properties(){
         return {
@@ -16,14 +10,28 @@ class CheckElement extends LitElement{
 
     static get styles(){
         return css `
+            h5{
+                color: #a5a5a5;
+            }
             .check-items{
                 display: flex;
                 flex-direction: column;
                 border: 2px solid #999;
                 border-radius: 20px;
+                height: 100px;
+                overflow-y: scroll;
+            }
+            .check-items::-webkit-scrollbar{
+                display: none;
             }
             .check-item{
-                margin: 10px;
+                padding: 5px;
+            }
+            .check-item:nth-child(odd){
+                background-color: #f5f5f5;
+            }
+            .check-item{
+                margin: 5px;
                 font-size: 14px;
             }
         `
@@ -31,7 +39,7 @@ class CheckElement extends LitElement{
 
     constructor(){
         super();
-        this.listItems = items
+        this.listItems = []
     }
 
     render(){

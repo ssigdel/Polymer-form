@@ -1,8 +1,7 @@
-import '@vaadin/vaadin-date-picker/vaadin-date-picker';
+import '@vaadin/date-picker/vaadin-date-picker';
 import { css, html, LitElement } from 'lit';
 
 class DateElement extends LitElement{
-
     static get styles(){
         return css `
             vaadin-date-picker{
@@ -17,9 +16,9 @@ class DateElement extends LitElement{
 
     render(){
         return html `
-            <vaadin-date-picker label="Label" value="2022-1-27" clear-button-visible></vaadin-date-picker>
+            <vaadin-date-picker label="Date" clear-button-visible></vaadin-date-picker>
         `
     }
 }
 
-customElements.define('date-elment', DateElement)
+customElements.define('date-element', DateElement)

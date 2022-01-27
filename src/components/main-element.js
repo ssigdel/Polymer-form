@@ -1,6 +1,12 @@
 import '@polymer/paper-card';
 import { css, html, LitElement } from 'lit';
 
+const checkItems = [
+    'BRD2 Affinity_High_Affinity',
+    'BRD2 AMP_PNP_competitive',
+    'BRD2 NRX-0459676_non-competitive'
+]
+
 class MainElement extends LitElement{
 
     static get styles(){
@@ -48,7 +54,7 @@ class MainElement extends LitElement{
                 <date-element></date-element>
             </div>
             <div>
-                <check-element></check-element>
+                <check-element .listItems=${checkItems}></check-element>
             <div>
             <div>
                 <text-element></text-element>
