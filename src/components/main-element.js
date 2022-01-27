@@ -41,6 +41,7 @@ class MainElement extends LitElement{
           
             <div class="header">
                 <h3>Create Binding Group</h3>
+                <icon-element></icon-element>
             </div>
             <div class="input-container">
                 <input-element label="Name"></input-element>

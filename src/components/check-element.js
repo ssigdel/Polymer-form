@@ -25,10 +25,10 @@ class CheckElement extends LitElement{
                 display: none;
             }
             .check-item{
-                padding: 5px;
+                padding: 10px;
             }
             .check-item:nth-child(odd){
-                background-color: #f5f5f5;
+                background-color: #f3f3f3;
             }
             .check-item{
                 margin: 5px;

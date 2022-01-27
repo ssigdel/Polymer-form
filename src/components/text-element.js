@@ -8,7 +8,7 @@ class TextElement extends LitElement{
 
     render(){
         return html `
-            <paper-textarea always-float-label label="Comments" rows="2">Comments</paper-textarea>
+            <paper-textarea always-float-label label="Comments" rows="4">Comments</paper-textarea>
         `
     }
 }
